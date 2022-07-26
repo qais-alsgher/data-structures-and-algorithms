@@ -53,7 +53,7 @@ Write a function named forEachTwoToThe that produces the same output as your for
 const forEachTwoToThe = (arr) => {
   // Solution code here...
   let pow2=[];
-  arr.forEach(num=>pow2.push(Math.pow(2,num)));
+  arr.forEach(ele=>pow2.push(Math.pow(2,ele)));
 
   return pow2;
 };
@@ -63,7 +63,7 @@ CHALLENGE 6
 Write a function named mapTwoToThe that produces the same output as your forLoopTwoToThe function from challenge 4 and your forEachTwoToThe function from challenge 5, but uses map instead of a for loop or forEach.
 ------------------------------------------------------------------------------------------------ */
 
-const mapTwoToThe = (arr) => arr.map(num=> Math.pow(2,num));
+const mapTwoToThe = (arr) => arr.map(ele=> Math.pow(2,ele));
 
 
 /* ------------------------------------------------------------------------------------------------
@@ -89,9 +89,9 @@ If any element in the array is not a number, the resulting array should have the
 For example: evenOdd([1,2,3]) returns ['odd','even','odd'].
 ------------------------------------------------------------------------------------------------ */
 
-const evenOdd = (arr) => {
+function evenOdd(arr) {
   // Solution code here...
-};
+}
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 9 - Stretch Goal
