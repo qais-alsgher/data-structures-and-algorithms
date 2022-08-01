@@ -70,11 +70,9 @@ For example, if the input is 'Welcome', the output will be:
 
 const howMuchPencil = (str) => {
   let result = [];
-  let splitArr=str.split('');
-  result.push(str);
-  for(let i=1;i<splitArr.length;i++){
-    splitArr.splice(i);
-    result.push(splitArr.join(''));
+ 
+  for (let i=0;i<=str.length;i++){
+    result.push(str.slice(i));
 
   }
   return result;
@@ -136,11 +134,11 @@ const gruffaloCrumble = {
 
 const listFoods = (recipe) => {
   let result = [];
-  result=recipe.ingredients.map((e)=>{
-    e.len
+  for(let i=0;i<recipe['ingredients'].length;i++){
+    let indx=recipe['ingredients'][i].indexOf(' ', 3);
+    result.push(recipe['ingredients'][i].slice(indx+1));
 
-
-  });
+  }
 
 
   return result;
