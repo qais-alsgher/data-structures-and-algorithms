@@ -24,7 +24,7 @@ For example:
 Returns: ['dyoll', 'eimaj'];
 ------------------------------------------------------------------------------------------------ */
 
-const getNames = (arr) => arr.map((ele)=>ele.name.split("").reverse().join(""));
+const getNames = (arr) =>arr.map((ele)=>ele.name.split("").reverse().join(""));
 
 
 /* ------------------------------------------------------------------------------------------------
@@ -97,6 +97,7 @@ const setStatusAsAuthor = (people) => {
   people.forEach(person => {
     person.isAuthor = true
   });
+  return people;
 };
 
 /* ------------------------------------------------------------------------------------------------
