@@ -40,7 +40,7 @@ Write a function named addPurchases that, given an array of objects as input, us
 ------------------------------------------------------------------------------------------------ */
 
 const addPurchases = (arr) =>arr.reduce((total,current)=>{return (total + current.purchasePrice) },0);
- 
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
@@ -205,7 +205,7 @@ const avgNum= arr.reduce((prev,current)=>{
 sum=prev+current;
 count+=1;
 return sum;
-},0)  
+},0)
 return avgNum/count;
 };
 
@@ -235,7 +235,7 @@ const countPrimeNumbers = (arr) => {
     return numPrim;
   },0)
   return numPrim;
-    
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -278,7 +278,7 @@ const snorlaxData = {
 };
 
 const extractStat = (statName, arr) => {
-  
+
 
 
 };
